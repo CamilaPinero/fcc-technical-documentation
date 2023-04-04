@@ -1,0 +1,86 @@
+body {
+  font-family: "Lucida Sans", sans-serif;
+  color: azure;
+  background-color: rgb(22, 21, 26);
+}
+nav {
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 250px;
+  height: 100%;
+}
+main {
+  display: block;
+  position: relative;
+  right: 0;
+  text-align: left;
+  margin-left: 250px;
+}
+li {
+  list-style: none;
+  padding: 0;
+}
+ul {
+  padding: 0;
+}
+.nav-link {
+  text-decoration: none;
+  color: azure;
+  padding: 10px 30px;
+  display: block;
+  border-bottom: 1px solid rgba(240, 255, 255, 0.682);
+}
+
+.nav-link:hover {
+  background-color: rgb(224, 233, 233);
+  color: rgb(22, 21, 26);
+}
+
+header {
+  font-weight: bold;
+  font-size: 30px;
+  padding: 10px 0;
+}
+p::first-line {
+  text-decoration: underline;
+  font-size: 20px;
+  line-height: 50px;
+}
+
+code {
+  background-color: rgb(224, 233, 233);
+  font-family: monospace;
+  color: rgb(22, 21, 26);
+  padding: 3px 5px;
+  border-radius: 5px;
+  margin: 5px;
+  text-align: center;
+  font-size: 18px;
+  display: inline-block;
+}
+nav > header {
+  text-align: center;
+  font-size: 40px;
+}
+
+p#References {
+  text-decoration: none !important;
+}
+
+article > a {
+  color: azure;
+}
+
+@media (max-width: 375px) {
+  nav {
+    position: relative;
+    top: 0;
+    box-sizing: border-box;
+  }
+
+  main {
+    margin-left: 0;
+  }
+}

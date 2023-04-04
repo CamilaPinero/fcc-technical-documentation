@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>CSS Selectors</header>
+      <ul>
+        <li>
+          <a class="nav-link" href="#Introduction">Introduction</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Basic_Selectors">Basic Selectors</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Grouping_Selectors">Grouping Selectors</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#Combinators">Combinators</a>
+        </li>
+        <li>
+          <a class="nav-link" href="#References">References</a>
+        </li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header id="Introduction">Introduction</header>
+        <article>
+          <p>
+            What's a CSS Selector? <br />
+            CSS selectors define the pattern to select elements to which a set
+            of CSS rules are then applied. CSS selectors can be grouped into the
+            following categories based on the type of elements they can select.
+          </p>
+        </article>
+      </section>
+      <section class="main-section" id="Basic_Selectors">
+        <header id="Basic-Selectors">Basic Selectors</header>
+        <article>
+          <p>
+            Universal selector <br />
+            Selects all elements. Optionally, it may be restricted to a specific
+            namespace or to all namespaces.
+          </p>
+          Syntax: <code>*</code> <code>ns|*</code><code>*|*</code>
+          <p>
+            Type selector <br />
+            Selects all elements that have the given node name.
+          </p>
+          Syntax: <code>elementname</code>
+          <p>
+            Class selector <br />
+            Selects all elements that have the given class attribute.
+          </p>
+          Sintax: <code>.classname </code>
+          <p>
+            ID selector<br />
+            Selects an element based on the value of its
+            <code>id</code> attribute. There should be only one element with a
+            given ID in a document.
+          </p>
+          Syntax: <code>#idname</code>
+          <p>
+            Attribute selector <br />
+            Selects all elements that have the given attribute.
+          </p>
+          Syntax:
+          <ul>
+            <li><code>[attr]</code></li>
+            <li><code>[attr=value]</code></li>
+            <li><code>[attr~=value]</code></li>
+            <li><code>[attr|=value]</code></li>
+            <li><code>[attr^=value]</code></li>
+            <li><code>[attr$=value]</code></li>
+            <li><code>[attr*=value]</code></li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="Grouping_Selectors">
+        <header id="Grouping-Selectors">Grouping Selectors</header>
+        <article>
+          <p>
+            Selector list <br />
+            The , selector is a grouping method that selects all the matching
+            nodes.
+          </p>
+          Syntax: <code>A, B</code>
+        </article>
+      </section>
+      <section class="main-section" id="Combinators">
+        <header id="Combinators">Combinators</header>
+        <article>
+          <p>
+            Descendant combinator <br />
+            The " " (space) combinator selects nodes that are descendants of the
+            first element.
+          </p>
+          Syntax: <code>A B</code>
+          <p>
+            Child combinator <br />
+            The > combinator selects nodes that are direct children of the first
+            element.
+          </p>
+          Syntax: <code>A > B</code>
+          <p>
+            General sibling combinator <br />
+            The ~ combinator selects siblings. This means that the second
+            element follows the first (though not necessarily immediately), and
+            both share the same parent.
+          </p>
+          Syntax: <code>A ~ B</code>
+          <p>
+            Adjacent sibling combinator <br />
+            The + combinator matches the second element only if it immediately
+            follows the first element.
+          </p>
+          Syntax: <code>A + B</code>
+          <p>
+            Column combinator (Experimental) <br />
+            The || combinator selects nodes which belong to a column.
+          </p>
+          Syntax: <code>A || B</code>
+        </article>
+      </section>
+      <section class="main-section" id="References">
+        <header id="References">References</header>
+        <article>
+          All the documentation in this page is taken from
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors"
+            >MDN Web Docs</a
+          >
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
